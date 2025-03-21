@@ -1,0 +1,17 @@
+.about-me {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ecf0f1;
+}
+
+.about-me h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.about-me p {
+  font-size: 1.2rem;
+}

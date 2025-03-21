@@ -1,0 +1,23 @@
+.skills {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f1c40f;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.skills ul {
+  list-style: none;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.skills li {
+  margin: 10px 0;
+}

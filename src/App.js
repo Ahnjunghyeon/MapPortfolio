@@ -1,24 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import AboutMe from "./components/AboutMe";
+import Skills from "./components/Skills";
+import Portfolio from "./components/Portfolio";
+import "./App.css";
 
 function App() {
+  const [scrolled, setScrolled] = useState(false);
+
+  // 스크롤 이벤트 감지
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        // 스크롤이 50px 이상일 때
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar scrolled={scrolled} />
+      <div className="container">
+        <section id="home">
+          <Home />
+        </section>
+        <section id="about">
+          <AboutMe />
+        </section>
+        <section id="skills">
+          <Skills />
+        </section>
+        <section id="portfolio">
+          <Portfolio />
+        </section>
+      </div>
+    </>
   );
 }
 
