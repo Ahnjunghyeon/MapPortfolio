@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
@@ -9,11 +10,9 @@ import "./App.css";
 function App() {
   const [scrolled, setScrolled] = useState(false);
 
-  // 스크롤 이벤트 감지
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        // 스크롤이 50px 이상일 때
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -26,9 +25,23 @@ function App() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
-    <>
+    <div className="app-container">
+      <p className="noto-sans">한글 텍스트는 Noto Sans KR 폰트로 적용</p>
+      <p className="libre-baskerville">
+        English text will use Libre Baskerville.
+      </p>
       <Navbar scrolled={scrolled} />
+      <Link
+        to="portfolio"
+        smooth={true}
+        duration={700}
+        className="finishlineButton"
+      >
+        ↓
+      </Link>
+
       <div className="container">
         <section id="home">
           <Home />
@@ -43,7 +56,7 @@ function App() {
           <Portfolio />
         </section>
       </div>
-    </>
+    </div>
   );
 }
 

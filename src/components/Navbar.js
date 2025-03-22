@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-scroll"; // react-scroll에서 Link 임포트
-import "./Navbar.css"; // CSS 파일 추가
+import { Link } from "react-scroll";
+import "./Navbar.css";
 
 const Navbar = ({ scrolled }) => {
   return (
