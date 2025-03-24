@@ -1,4 +1,18 @@
+/* .noto-sans {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.libre-baskerville {
+  font-family: "Libre Baskerville", serif;
+} */
+
+p {
+  margin: 10px 0px;
+  color: #112a42;
+}
+
 .about-me {
+  letter-spacing: 1px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -7,11 +21,94 @@
   background: #ecf0f12c;
 }
 
-.about-me h2 {
-  font-size: 2rem;
-  color: #2c3e50;
+.about-me .aboutmelogo {
+  position: absolute;
+  font-size: 1.25rem;
+  color: #b3907a;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  top: 950px;
+  align-self: flex-end;
 }
 
-.about-me p {
-  font-size: 1.2rem;
+.about-me-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  width: 100%;
+  font-size: 1.5rem;
+}
+/* ----------about ------------ */
+
+.contact {
+  font-size: 20px;
+  margin-left: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(82, 15, 15, 0);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.aboutimage {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 25px;
+}
+
+.contactmain {
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: #171c20;
+}
+
+.contact .usericon,
+.birthicon,
+.email,
+.git {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-bottom: 7px;
+  vertical-align: middle;
+}
+
+.contact .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+
+/* ----------contact ------------ */
+.education {
+  background: rgba(82, 15, 15, 0);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* ----------education ------------ */
+
+.about-box {
+  background: rgba(82, 15, 15, 0);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.about-box h3 {
+  font-size: 1.5rem;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.about-box p {
+  font-size: 1.1rem;
+  color: #2c3e50;
 }

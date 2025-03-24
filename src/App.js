@@ -28,10 +28,10 @@ function App() {
 
   return (
     <div className="app-container">
-      <p className="noto-sans">한글 텍스트는 Noto Sans KR 폰트로 적용</p>
+      {/* <p className="noto-sans">한글 텍스트는 Noto Sans KR 폰트로 적용</p>
       <p className="libre-baskerville">
         English text will use Libre Baskerville.
-      </p>
+      </p> */}
       <Navbar scrolled={scrolled} />
       <Link
         to="portfolio"
