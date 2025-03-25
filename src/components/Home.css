@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #2b6b6823;
+  background: #faf3e034;
   color: white;
   overflow: hidden;
 }
@@ -37,4 +37,18 @@
   font-size: 1.35rem;
   line-height: 1.8;
   letter-spacing: 1px;
+}
+
+.gotoabout {
+  position: absolute;
+  bottom: 150px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  padding: 10px;
+  border-radius: 30%;
+}
+
+.gotoabout:hover {
+  color: #ffe293;
 }

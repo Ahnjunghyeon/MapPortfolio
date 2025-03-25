@@ -8,17 +8,23 @@
 
 p {
   margin: 10px 0px;
-  color: #112a42;
+  color: #ffffffc7;
+}
+
+span {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 20px rgba(255, 0, 0, 0.377);
 }
 
 .about-me {
+  width: 100%;
   letter-spacing: 1px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #ecf0f12c;
+  background: #2c3e5021;
 }
 
 .about-me .aboutmelogo {
@@ -38,14 +44,20 @@ p {
   width: 100%;
   font-size: 1.5rem;
 }
+
+.abouttitle {
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: #171c20;
+}
+
 /* ----------about ------------ */
 
 .contact {
+  margin-left: 200px;
   font-size: 20px;
-  margin-left: 120px;
   display: flex;
   align-items: center;
-  justify-content: center;
   background: rgba(82, 15, 15, 0);
   padding: 20px;
   border-radius: 10px;
@@ -53,17 +65,13 @@ p {
 }
 
 .aboutimage {
-  width: 200px;
-  height: 250px;
+  width: 180px;
+  height: 220px;
   object-fit: cover;
   border-radius: 10px;
-  margin-right: 25px;
-}
+  margin-left: 100px;
 
-.contactmain {
-  font-size: 30px;
-  margin-bottom: 25px;
-  color: #171c20;
+  margin-right: 25px;
 }
 
 .contact .usericon,
@@ -86,29 +94,90 @@ p {
 
 /* ----------contact ------------ */
 .education {
+  margin-left: 200px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   background: rgba(82, 15, 15, 0);
-  padding: 20px;
   border-radius: 10px;
-  text-align: center;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.educationmain {
+  color: #ffffff;
+}
+
+.educationmiddle {
+  font-size: 16px;
+  color: #ebebebfb;
+}
+.educationlast1 {
+  font-size: 16px;
+  color: #ebebebfb;
+
+  margin-bottom: 50px;
+}
+.educationlast {
+  font-size: 16px;
+  color: #ebebebfb;
 }
 
 /* ----------education ------------ */
+.gotobox {
+  margin-left: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.about-box {
+.gotoskills {
+  color: #ffffff;
+  position: absolute;
+  font-size: 30px;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  padding: 10px;
+  border-radius: 30%;
+}
+
+.gotoskills:hover {
+  color: #ffe293;
+}
+
+/* ---------- gotobox ------------ */
+
+.experience {
+  font-size: 20px;
+  margin-top: 100px;
+  margin-left: 200px;
+  align-items: flex-start;
+  justify-content: center;
   background: rgba(82, 15, 15, 0);
-  padding: 20px;
   border-radius: 10px;
-  text-align: center;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  text-align: left;
+  white-space: nowrap;
 }
 
-.about-box h3 {
-  font-size: 1.5rem;
-  color: #34495e;
+.experience-goal {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* ----------experience ------------ */
+
+.abouttitle {
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: #171c20;
+}
+
+.experiencetitle {
+  font-size: 18px;
+  color: #ffffff;
   margin-bottom: 10px;
-}
-
-.about-box p {
-  font-size: 1.1rem;
-  color: #2c3e50;
 }

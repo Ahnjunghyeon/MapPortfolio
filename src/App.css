@@ -24,9 +24,10 @@ body {
 
 .app-container {
   width: 100%;
+
   min-height: 100vh;
   background: linear-gradient(rgba(184, 236, 212, 0), rgba(0, 0, 0, 0.3)),
-    url("/images/dullgreen.jpg") center/cover no-repeat;
+    url("../public/images/dullgreen.jpg") center/cover no-repeat;
   background-size: cover;
 }
 
@@ -36,7 +37,7 @@ body {
   bottom: 20px;
   width: 45px;
   height: 45px;
-  font-size: 28px;
+  font-size: 22px;
   background-color: #0c5a5450;
   border: none;
   border-radius: 50%;

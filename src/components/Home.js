@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import "./Home.css";
 
@@ -27,6 +28,9 @@ const Home = () => {
         생각합니다. <br />
         다양한 프로젝트를 경험하며 뛰어난 개발자로 성장해 나가겠습니다. <br />
       </motion.p>
+      <Link className="gotoabout" to="about" smooth={true} duration={500}>
+        About Me ⬇
+      </Link>{" "}
     </motion.section>
   );
 };
