@@ -1,0 +1,158 @@
+*span {
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(85, 47, 47, 0.897);
+}
+
+.project-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+  background: #fffeed31;
+  color: #ffffff;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.project-detail .maintitle {
+  margin-top: 100px;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 50px;
+  font-family: "Libre Baskerville", serif;
+}
+
+.project-detail p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.githuburl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-family: "Libre Baskerville", serif;
+}
+
+.image-container {
+  margin: 0px 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MapStar-img-width {
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  object-fit: cover;
+}
+.webexplanation {
+  position: relative;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 28px; /* 폰트 크기 증가 */
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6); /* 텍스트 그림자 강도 증가 */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.103); /* 배경 추가 */
+
+  border-radius: 10px; /* 테두리 둥글게 처리 */
+}
+
+.webexplanationsub {
+  width: 1000px;
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px; /* 폰트 크기 */
+  text-align: center;
+  color: #f5f5f5; /* 텍스트 색상 변경 */
+  line-height: 1.8; /* 줄 간격 조정 */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.103); /* 배경 추가 */
+  border-radius: 10px;
+}
+
+/* 웹이미지 */
+
+.phone-image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MapStar-img-height {
+  width: 100%;
+  max-width: 300px;
+  height: 600px;
+  object-fit: cover;
+}
+.phoneexplanation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  font-size: 24px;
+}
+
+/* 반응형이미지 */
+
+.left-click-area,
+.right-click-area {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  cursor: pointer;
+}
+
+.left-click-area {
+  left: 0;
+}
+
+.right-click-area {
+  right: 0;
+}
+
+.left-click-area:hover,
+.right-click-area:hover {
+  transform: scale(1.05);
+  background: rgba(119, 119, 119, 0);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  background-color: #6c5b7b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4b3d56;
+}
+
+button:focus {
+  outline: none;
+}

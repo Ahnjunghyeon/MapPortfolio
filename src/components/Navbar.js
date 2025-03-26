@@ -17,13 +17,13 @@ const Navbar = ({ scrolled }) => {
           </Link>
         </li>
         <li>
-          <Link to="skills" smooth={true} duration={500}>
-            Skills
+          <Link to="portfolio" smooth={true} duration={500}>
+            Portfolio
           </Link>
         </li>
         <li>
-          <Link to="portfolio" smooth={true} duration={500}>
-            Portfolio
+          <Link to="skills" smooth={true} duration={500}>
+            Skills
           </Link>
         </li>
       </ul>

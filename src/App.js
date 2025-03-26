@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
+import MapStar from "./components/projects/MapStar";
+import Snsweb from "./components/projects/Snsweb";
+import UserService from "./components/projects/Snsweb";
+
 import "./App.css";
 
 function App() {
@@ -12,50 +17,50 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <div className="app-container">
-      {/* <p className="noto-sans">한글 텍스트는 Noto Sans KR 폰트로 적용</p>
-      <p className="libre-baskerville">
-        English text will use Libre Baskerville.
-      </p> */}
       <Navbar scrolled={scrolled} />
-      <Link
-        to="portfolio"
+
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <section id="home">
+                <Home />
+              </section>
+              <section id="about">
+                <AboutMe />
+              </section>
+              <section id="portfolio">
+                <Portfolio />
+              </section>
+              <section id="skills">
+                <Skills />
+              </section>
+            </>
+          }
+        />
+        <Route path="/projects/mapstar" element={<MapStar />} />
+        <Route path="/projects/snsweb" element={<Snsweb />} />
+        <Route path="/projects/userservice" element={<UserService />} />
+      </Routes>
+
+      <ScrollLink
+        to="skills"
         smooth={true}
         duration={700}
         className="finishlineButton"
       >
         ↓
-      </Link>
-
-      <div className="container">
-        <section id="home">
-          <Home />
-        </section>
-        <section id="about">
-          <AboutMe />
-        </section>
-        <section id="skills">
-          <Skills />
-        </section>
-        <section id="portfolio">
-          <Portfolio />
-        </section>
-      </div>
+      </ScrollLink>
     </div>
   );
 }

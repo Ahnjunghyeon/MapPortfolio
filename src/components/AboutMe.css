@@ -11,7 +11,7 @@ p {
   color: #ffffffc7;
 }
 
-span {
+*span {
   color: rgb(255, 255, 255);
   text-shadow: 0 0 20px rgba(255, 0, 0, 0.377);
 }
@@ -24,7 +24,7 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #2c3e5021;
+  background: #e4eaf021;
 }
 
 .about-me .aboutmelogo {
