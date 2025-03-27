@@ -1,15 +1,7 @@
 .portfolio {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #6c5b7b31;
-}
-
-.portfolio h2 {
-  font-size: 2rem;
-  color: white;
 }
 
 .portfolio p {
@@ -19,9 +11,42 @@
 }
 
 .portfolio-grid {
+  margin-left: 170px;
+  height: auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+}
+
+.portfolio-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  margin: 150px auto;
+}
+
+.portfolio-item {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* 줄 바꿈 허용 */
+}
+
+.portfolio-group-title {
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 20px 0;
+  color: white;
+  font-weight: bold;
+}
+
+.project-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project-card {
@@ -29,9 +54,10 @@
   text-align: center;
   margin-top: 20px;
   position: relative;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2); /* 기존 0.1 -> 0.2로 조정 */
   padding: 15px;
   border-radius: 12px;
+
   transition: transform 0.3s ease, background 0.3s ease;
 }
 

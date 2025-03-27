@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
@@ -14,6 +14,7 @@ import "./App.css";
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation(); // 현재 위치 정보 받아오기
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,10 +25,11 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const showNavbar = !location.pathname.includes("/projects");
+
   return (
     <div className="app-container">
-      <Navbar scrolled={scrolled} />
-
+      {showNavbar && <Navbar scrolled={scrolled} />} {/* 조건부 렌더링 */}
       <Routes>
         <Route
           path="/"
@@ -52,7 +54,6 @@ function App() {
         <Route path="/projects/snsweb" element={<Snsweb />} />
         <Route path="/projects/userservice" element={<UserService />} />
       </Routes>
-
       <ScrollLink
         to="skills"
         smooth={true}

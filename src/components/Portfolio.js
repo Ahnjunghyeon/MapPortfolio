@@ -11,59 +11,114 @@ const Portfolio = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <h2 className="portfolio-title">My Projects</h2>
       <div className="portfolio-grid">
-        {/* snsweb 프로젝트*/}
-        <motion.div className="portfolio-item" whileHover={{ scale: 1.05 }}>
-          <Link to="/projects/snsweb">
-            <div className="project-card">
-              <img
-                src="/images/snsweb.jpg" // 실제 이미지 경로 확인 필요
-                alt="SnsWeb 프로젝트"
-                className="project-img"
-              />
-              <div className="overlay">
-                <p className="project-text">SNS - WEB</p>
-              </div>
-            </div>
-            <p className="project-text">Sub 프로젝트</p>
-          </Link>
-          <Link to="/projects/mapstar">
-            <div className="project-card">
-              <img
-                src="/images/mapstarphone.jpg" // 실제 이미지 경로 확인 필요
-                alt="MapStar 프로젝트"
-                className="project-img"
-              />
-              <div className="overlay">
-                <p className="project-text">지도 프로젝트</p>
-              </div>
-            </div>
-            <p className="project-text">Main 프로젝트</p>
-          </Link>
-        </motion.div>
-        {/* MapStar 프로젝트*/}
-        <motion.div
-          className="portfolio-item"
-          whileHover={{ scale: 1.05 }}
-        ></motion.div>
+        <div className="portfolio-title">My Projects</div>
 
-        {/* userservice 프로젝트*/}
-        <motion.div className="portfolio-item" whileHover={{ scale: 1.05 }}>
-          <Link to="/projects/snsweb">
-            <div className="project-card">
-              <img
-                src="/images/userservice.jpg"
-                alt="UserService 프로젝트"
-                className="project-img"
-              />
-              <div className="overlay">
-                <p className="project-text">USERSERVICE</p>
-              </div>
-            </div>
+        {/* 1번 프로젝트 모음 */}
+        <div className="portfolio-item">
+          <div className="portfolio-group-title">1번 프로젝트 모음</div>
+
+          <div className="project-wrapper">
+            <Link to="/projects/snsweb">
+              <motion.div className="project-card" whileHover={{ scale: 1.05 }}>
+                <img
+                  src="/images/snsweb.jpg"
+                  alt="SnsWeb 프로젝트"
+                  className="project-img"
+                />
+                <div className="overlay">
+                  <p className="project-text">SNS - WEB</p>
+                </div>
+              </motion.div>
+            </Link>
             <p className="project-text">Sub 프로젝트</p>
-          </Link>
-        </motion.div>
+          </div>
+
+          <div className="project-wrapper">
+            <Link to="/projects/mapstar">
+              <motion.div className="project-card" whileHover={{ scale: 1.05 }}>
+                <img
+                  src="/images/mapstarphone.jpg"
+                  alt="MapStar 프로젝트"
+                  className="project-img"
+                />
+                <div className="overlay">
+                  <p className="project-text">지도 프로젝트</p>
+                </div>
+              </motion.div>
+            </Link>
+            <p className="project-text">Main 프로젝트</p>
+          </div>
+
+          <div className="project-wrapper">
+            <Link to="/projects/userservice">
+              <motion.div className="project-card" whileHover={{ scale: 1.05 }}>
+                <img
+                  src="/images/userservice.jpg"
+                  alt="UserService 프로젝트"
+                  className="project-img"
+                />
+                <div className="overlay">
+                  <p className="project-text">USERSERVICE</p>
+                </div>
+              </motion.div>
+            </Link>
+            <p className="project-text">Sub 프로젝트</p>
+          </div>
+        </div>
+
+        {/* 2번 프로젝트 모음 */}
+        <div className="portfolio-item">
+          <div className="portfolio-group-title">2번 프로젝트 모음</div>
+
+          <div className="project-wrapper">
+            <Link to="/projects/anotherproject">
+              <motion.div className="project-card" whileHover={{ scale: 1.05 }}>
+                <img
+                  src="/images/anotherproject.jpg"
+                  alt="Another 프로젝트"
+                  className="project-img"
+                />
+                <div className="overlay">
+                  <p className="project-text">Another Project</p>
+                </div>
+              </motion.div>
+            </Link>
+            <p className="project-text">New Sub 프로젝트</p>
+          </div>
+
+          <div className="project-wrapper">
+            <Link to="/projects/newmap">
+              <motion.div className="project-card" whileHover={{ scale: 1.05 }}>
+                <img
+                  src="/images/newmap.jpg"
+                  alt="NewMap 프로젝트"
+                  className="project-img"
+                />
+                <div className="overlay">
+                  <p className="project-text">New Map Project</p>
+                </div>
+              </motion.div>
+            </Link>
+            <p className="project-text">New Main 프로젝트</p>
+          </div>
+
+          <div className="project-wrapper">
+            <Link to="/projects/newservice">
+              <motion.div className="project-card" whileHover={{ scale: 1.05 }}>
+                <img
+                  src="/images/newservice.jpg"
+                  alt="NewService 프로젝트"
+                  className="project-img"
+                />
+                <div className="overlay">
+                  <p className="project-text">New Service</p>
+                </div>
+              </motion.div>
+            </Link>
+            <p className="project-text">New Sub 프로젝트</p>
+          </div>
+        </div>
       </div>
     </motion.section>
   );
