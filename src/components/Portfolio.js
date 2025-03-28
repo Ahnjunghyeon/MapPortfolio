@@ -19,7 +19,7 @@ const Portfolio = () => {
             <Link to="/projects/snsweb">
               <motion.div className="project-card" whileHover={{ scale: 1.05 }}>
                 <img
-                  src="/images/snsweb.jpg"
+                  src="/images/snsweb.JPG"
                   alt="SnsWeb 프로젝트"
                   className="project-img"
                 />
@@ -35,7 +35,7 @@ const Portfolio = () => {
             <Link to="/projects/mapstar">
               <motion.div className="project-card" whileHover={{ scale: 1.05 }}>
                 <img
-                  src="/images/mapstarphone.jpg"
+                  src="/images/mapstarphone.JPG"
                   alt="MapStar 프로젝트"
                   className="project-img"
                 />
@@ -51,7 +51,7 @@ const Portfolio = () => {
             <Link to="/projects/userservice">
               <motion.div className="project-card" whileHover={{ scale: 1.05 }}>
                 <img
-                  src="/images/userservice.jpg"
+                  src="/images/userservice.JPG"
                   alt="UserService 프로젝트"
                   className="project-img"
                 />
@@ -69,7 +69,7 @@ const Portfolio = () => {
             <Link to="/projects/Capston">
               <motion.div className="project-card" whileHover={{ scale: 1.05 }}>
                 <img
-                  src="/images/capston/캡스톤8.jpg"
+                  src="/images/capston/캡스톤8.JPG"
                   alt="capston 프로젝트"
                   className="project-img"
                 />
@@ -85,7 +85,7 @@ const Portfolio = () => {
             <Link to="/projects/Bigdata">
               <motion.div className="project-card" whileHover={{ scale: 1.05 }}>
                 <img
-                  src="/images/bigdata/봄춘내천1.jpg"
+                  src="/images/bom1.JPG"
                   alt="bigdata 프로젝트"
                   className="project-img"
                 />
@@ -101,7 +101,7 @@ const Portfolio = () => {
             <Link to="/projects/todolist">
               <motion.div className="project-card" whileHover={{ scale: 1.05 }}>
                 <img
-                  src="/images/todolist/todolist3.jpg"
+                  src="/images/todolist/todolist3.JPG"
                   alt="todolist 프로젝트"
                   className="project-img"
                 />
@@ -116,7 +116,7 @@ const Portfolio = () => {
             <Link to="/projects/frontport">
               <motion.div className="project-card" whileHover={{ scale: 1.05 }}>
                 <img
-                  src="/images/frontport/프론트앤드개발자포트폴리오.jpg"
+                  src="/images/frontport/프론트앤드개발자포트폴리오.JPG"
                   alt="포트폴리오 프로젝트"
                   className="project-img"
                 />

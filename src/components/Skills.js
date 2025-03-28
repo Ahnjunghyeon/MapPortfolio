@@ -38,10 +38,6 @@ const Skills = () => {
             <strong>Java</strong> - 객체 지향 프로그래밍 학습
           </li>
         </ul>
-      </div>
-
-      {/* Backend & Database */}
-      <div className="skill-category">
         <h3>🛠 Backend & Database</h3>
         <ul>
           <li>

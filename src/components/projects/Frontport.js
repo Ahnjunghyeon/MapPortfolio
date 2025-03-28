@@ -10,9 +10,9 @@ const Frontport = () => {
   }, []);
 
   const images = [
-    "/images/frontport/프론트앤드개발자포트폴리오.jpg",
-    "/images/frontport/프론트앤드개발자포트폴리오1.jpg",
-    "/images/frontport/프론트앤드개발자포트폴리오2.jpg",
+    "/images/frontport/프론트앤드개발자포트폴리오.JPG",
+    "/images/frontport/프론트앤드개발자포트폴리오1.JPG",
+    "/images/frontport/프론트앤드개발자포트폴리오2.JPG",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

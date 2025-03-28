@@ -11,20 +11,20 @@ const Snsweb = () => {
 
   // 이미지 배열
   const images = [
-    "/images/snsweb/post_like_comment.jpg",
-    "/images/snsweb/expost.jpg",
-    "/images/snsweb/direct.jpg",
-    "/images/snsweb/Notification.jpg",
-    "/images/snsweb/loginwithgoogle.jpg",
-    "/images/snsweb/follow.jpg",
-    "/images/snsweb/profile.jpg",
+    "/images/snsweb/post_like_comment.JPG",
+    "/images/snsweb/expost.JPG",
+    "/images/snsweb/direct.JPG",
+    "/images/snsweb/Notification.JPG",
+    "/images/snsweb/loginwithgoogle.JPG",
+    "/images/snsweb/follow.JPG",
+    "/images/snsweb/profile.JPG",
   ];
   const phoneimages = [
-    "/images/snsweb/phonehome.jpg",
-    "/images/snsweb/phoneuploda.jpg",
-    "/images/snsweb/phoneprofile.jpg",
-    "/images/snsweb/phonefollow.jpg",
-    "/images/snsweb/phonedirect.jpg",
+    "/images/snsweb/phonehome.JPG",
+    "/images/snsweb/phoneuploda.JPG",
+    "/images/snsweb/phoneprofile.JPG",
+    "/images/snsweb/phonefollow.JPG",
+    "/images/snsweb/phonedirect.JPG",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -152,6 +152,9 @@ const Snsweb = () => {
       <button className="beforepage" onClick={() => navigate(-1)}>
         이전으로 ⤶
       </button>{" "}
+      <button className="beforepagebutton" onClick={() => navigate(-1)}>
+        이전 페이지로
+      </button>
     </div>
   );
 };

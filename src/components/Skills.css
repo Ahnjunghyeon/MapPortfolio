@@ -17,24 +17,26 @@
 }
 
 .skill-category {
+  display: flex;
+  flex-direction: column;
+
   margin-left: 140px;
-  background: white;
+  background: rgba(255, 255, 255, 0);
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 60%;
+  width: auto;
   margin-bottom: 20px;
 }
 
 .skill-category h3 {
   font-size: 1.8rem;
-  color: #444;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
 .skill-category h4 {
   font-size: 1.4rem;
-  color: #777;
+  color: #ffffff;
   margin-top: 15px;
 }
 
@@ -49,7 +51,7 @@
   margin: 8px 0;
   position: relative;
   padding-left: 20px;
-  color: #555;
+  color: #ffffff;
 }
 
 .skills li::before {

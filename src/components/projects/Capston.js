@@ -7,11 +7,11 @@ const Capston = () => {
 
   // 이미지 배열
   const images = [
-    "/images/capston/캡스톤3.jpg",
-    "/images/capston/캡스톤6.jpg",
-    "/images/capston/캡스톤7.jpg",
-    "/images/capston/캡스톤8.jpg",
-    "/images/capston/캡스톤9.jpg",
+    "/images/capston/캡스톤3.JPG",
+    "/images/capston/캡스톤6.JPG",
+    "/images/capston/캡스톤7.JPG",
+    "/images/capston/캡스톤8.JPG",
+    "/images/capston/캡스톤9.JPG",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

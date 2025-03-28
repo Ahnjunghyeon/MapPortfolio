@@ -11,15 +11,15 @@ const Bigdata = () => {
 
   // 이미지 배열
   const images = [
-    "/images/bigdata/봄춘내천1.jpg",
-    "/images/bigdata/봄춘내천2.jpg",
-    "/images/bigdata/봄춘내천3.jpg",
-    "/images/bigdata/봄춘내천4.jpg",
-    "/images/bigdata/봄춘내천5.jpg",
-    "/images/bigdata/봄춘내천6.jpg",
-    "/images/bigdata/봄춘내천7.jpg",
-    "/images/bigdata/빅데이터발표.jpg",
-    "/images/bigdata/빅데이터금상.jpg",
+    "/images/bigdata/bom1.JPG",
+    "/images/bigdata/bom2.JPG",
+    "/images/bigdata/bom3.JPG",
+    "/images/bigdata/bom4.JPG",
+    "/images/bigdata/bom5.JPG",
+    "/images/bigdata/bom6.JPG",
+    "/images/bigdata/bom7.JPG",
+    "/images/bigdata/bombal.JPG",
+    "/images/bigdata/bomgold.png",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -77,10 +77,10 @@ const Bigdata = () => {
           />
         </div>
         <div className="webexplanation">
-          <span>빅데이터 경진대회는 시에서 주관한 대회입니다. </span>
+          <span>빅데이터 경진대회에서 저희는 </span>
         </div>
         <div className="bigdatawebexplanationsub">
-          다양한 주제중에 저희는 - "대규모 사업 유치를 위한 부지 선정 및 분석"
+          다양한 주제중에 - "대규모 사업 유치를 위한 부지 선정 및 분석"
           <br />
           주제를 선택했습니다. <br />
           선택한 이유는 빅데이터롤 무언가를 할 때 접근하기 쉽다고

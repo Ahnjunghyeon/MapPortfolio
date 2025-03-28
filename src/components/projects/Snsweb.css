@@ -334,3 +334,23 @@
 .tech-image-aws:hover {
   transform: scale(1.1);
 }
+
+.beforepagebutton {
+  font-family: "Jua", sans-serif;
+  font-size: 17px;
+  border: none;
+  color: #000000;
+  background-color: #ffffff00;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.beforepagebutton:hover {
+  background-color: #00000067;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

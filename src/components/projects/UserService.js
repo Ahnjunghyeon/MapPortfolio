@@ -7,12 +7,12 @@ const UserService = () => {
 
   // 이미지 배열
   const images = [
-    "/images/userservice/메인페이지.jpg",
-    "/images/userservice/검색.jpg",
-    "/images/userservice/고객추가.jpg",
-    "/images/userservice/삭제.jpg",
-    "/images/userservice/삭제-1.jpg",
-    "/images/userservice/삭제 후 DB처리.jpg",
+    "/images/userservice/메인페이지.JPG",
+    "/images/userservice/검색.JPG",
+    "/images/userservice/고객추가.JPG",
+    "/images/userservice/삭제.JPG",
+    "/images/userservice/삭제-1.JPG",
+    "/images/userservice/삭제 후 DB처리.JPG",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -97,6 +97,9 @@ const UserService = () => {
       <button className="beforepage" onClick={() => navigate(-1)}>
         이전으로 ⤶
       </button>{" "}
+      <button className="userbeforepagebutton" onClick={() => navigate(-1)}>
+        이전 페이지로
+      </button>
     </div>
   );
 };

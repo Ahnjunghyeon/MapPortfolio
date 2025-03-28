@@ -7,9 +7,9 @@ const Todolist = () => {
 
   // 이미지 배열
   const images = [
-    "/images/todolist/todolist1.jpg",
-    "/images/todolist/todolist2.jpg",
-    "/images/todolist/todolist3.jpg",
+    "/images/todolist/todolist1.JPG",
+    "/images/todolist/todolist2.JPG",
+    "/images/todolist/todolist3.JPG",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -28,14 +28,14 @@ const Todolist = () => {
 
   return (
     <div className="project-detail">
-      <div className="usermaintitle">고객관리서비스</div>
-      <div className="userintroduction">
+      <div className="todomaintitle">고객관리서비스</div>
+      <div className="todointroduction">
         {" "}
-        <div className="usernsmaintitlesub">할일 추가 및 제거</div>
-        <div className="usermaintitlesub">2024.03. ~ 2024.04 </div>
+        <div className="todonsmaintitlesub">할일 추가 및 제거</div>
+        <div className="todomaintitlesub">2024.03. ~ 2024.04 </div>
       </div>
       <div className="image-conts">
-        <div className="usergithuburl">
+        <div className="todogithuburl">
           <a
             href="https://github.com/Ahnjunghyeon/todo-app"
             target="_blank"
@@ -52,8 +52,8 @@ const Todolist = () => {
           <div className="left-click-area" onClick={handlePrev} />
           <img
             src={images[currentIndex]}
-            alt="userweb"
-            className="userweb-img-width"
+            alt="todoweb"
+            className="todoweb-img-width"
           />
           <div className="right-click-area" onClick={handleNext} />
           <div className="right-click" onClick={handleNext}>
@@ -61,7 +61,7 @@ const Todolist = () => {
           </div>
         </div>
         <div className="skilltitle">💻사용기술</div>
-        <div className="userskilletools">
+        <div className="todoskilletools">
           <img
             src="/images/toolsimage/firebaselogo.png"
             alt="기술2"
@@ -82,7 +82,7 @@ const Todolist = () => {
         <div className="webexplanation">
           <span>Todolist는 Youtube의 강의를 보고 만든웹입니다. </span>
         </div>
-        <div className="userwebexplanationsub">
+        <div className="todowebexplanationsub">
           개인 정보 관리 – 구글 로그인서비스, 할일 추가, 체크, 삭제 기능 구현
           <br /> firebase DB 연동 + firebas auth : google로그인
         </div>
@@ -90,9 +90,9 @@ const Todolist = () => {
       <button className="beforepage" onClick={() => navigate(-1)}>
         이전으로 ⤶
       </button>{" "}
-      <button className="beforepagebutton" onClick={() => navigate(-1)}>
+      <button className="todobeforepagebutton" onClick={() => navigate(-1)}>
         이전 페이지로
-      </button>{" "}
+      </button>
     </div>
   );
 };

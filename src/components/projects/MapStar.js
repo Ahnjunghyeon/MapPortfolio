@@ -11,15 +11,15 @@ const MapStar = () => {
 
   // 이미지 배열
   const images = [
-    "/images/mapstar/category.jpg",
-    "/images/mapstar/category2.jpg",
-    "/images/mapstar/default.jpg",
-    "/images/mapstar/search1.jpg",
-    "/images/mapstar/searchhistory.jpg",
-    "/images/mapstar/login.jpg",
-    "/images/mapstar/register.jpg",
-    "/images/mapstar/데이터베이스-1.jpg",
-    "/images/mapstar/실제 앱.jpg",
+    "/images/mapstar/category.JPG",
+    "/images/mapstar/category2.JPG",
+    "/images/mapstar/default.JPG",
+    "/images/mapstar/search1.JPG",
+    "/images/mapstar/searchhistory.JPG",
+    "/images/mapstar/login.JPG",
+    "/images/mapstar/register.JPG",
+    "/images/mapstar/데이터베이스-1.JPG",
+    "/images/mapstar/실제 앱.JPG",
   ];
   const phoneimages = [
     "/images/mapstar/phonedefault.png",
@@ -126,8 +126,9 @@ const MapStar = () => {
           />
         </div>
         <div className="webexplanation">
-          <span>MapStar-Web은 카카오 API를 기반으로 제작된 인프라 서비스</span>
-          입니다.
+          <span>
+            MapStar-Web은 카카오 API를 기반으로 제작된 인프라 서비스입니다.
+          </span>
         </div>
         <div className="webexplanationsub">
           새로운 위치를 선정할 때, 주변 인프라를 한눈에 확인할 수 있도록 돕는
@@ -175,6 +176,9 @@ const MapStar = () => {
       <button className="beforepage" onClick={() => navigate(-1)}>
         이전으로 ⤶
       </button>{" "}
+      <button className="beforepagebutton" onClick={() => navigate(-1)}>
+        이전 페이지로
+      </button>
     </div>
   );
 };

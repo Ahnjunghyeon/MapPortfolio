@@ -10,7 +10,7 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
-.project-detail .usermaintitle {
+.project-detail .todomaintitle {
   position: relative;
   left: -350px;
   margin-top: 50px;
@@ -20,7 +20,7 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
-.project-detail .userintroduction {
+.project-detail .todointroduction {
   gap: 650px;
   display: flex;
   justify-content: space-between;
@@ -38,12 +38,12 @@
   margin-bottom: 30px;
 }
 
-.usergithuburl {
+.todogithuburl {
   display: flex;
   justify-content: center;
 }
 
-.usergithuburl a {
+.todogithuburl a {
   margin-bottom: 30px;
   align-items: center;
   font-size: 24px;
@@ -54,7 +54,7 @@
   height: auto;
   padding: 10px;
 }
-.usergithuburl a:hover {
+.todogithuburl a:hover {
   text-decoration: none;
   color: #003366;
   padding: 10px;
@@ -70,7 +70,7 @@
   align-items: center;
 }
 
-.userweb-img-width {
+.todoweb-img-width {
   width: 100%;
   max-width: 800px;
   height: auto;
@@ -93,7 +93,7 @@
   border-radius: 10px; /* 테두리 둥글게 처리 */
 }
 
-.userwebexplanationsub {
+.todowebexplanationsub {
   width: 1000px;
   margin-bottom: 20px;
   position: relative;
@@ -117,7 +117,7 @@
   align-items: center;
 }
 
-.userweb-img-height {
+.todoweb-img-height {
   width: 100%;
   max-width: 400px;
   height: auto;
@@ -241,7 +241,7 @@ button:focus {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.beforepagebutton {
+.todobeforepagebutton {
   font-family: "Jua", sans-serif;
   font-size: 17px;
   border: none;
@@ -255,7 +255,7 @@ button:focus {
   z-index: 9999;
 }
 
-.beforepagebutton:hover {
+.todobeforepagebutton:hover {
   background-color: #00000067;
   color: #ffffff;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -266,7 +266,7 @@ button:focus {
   font-size: 25px;
 }
 
-.userskilletools {
+.todoskilletools {
   display: flex;
   justify-content: center;
   align-items: center;
