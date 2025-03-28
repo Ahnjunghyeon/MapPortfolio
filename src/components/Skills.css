@@ -4,20 +4,76 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(241, 196, 15, 0.082);
+  background: rgba(241, 196, 15, 0.08);
+  padding: 20px;
 }
 
 .skills h2 {
-  font-size: 2rem;
-  color: #fff;
+  font-family: "Jua", sans-serif;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+  margin-left: 140px;
+}
+
+.skill-category {
+  margin-left: 140px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.skill-category h3 {
+  font-size: 1.8rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.skill-category h4 {
+  font-size: 1.4rem;
+  color: #777;
+  margin-top: 15px;
 }
 
 .skills ul {
   list-style: none;
   font-size: 1.2rem;
-  text-align: center;
+  text-align: left;
+  padding-left: 20px;
 }
 
 .skills li {
-  margin: 10px 0;
+  margin: 8px 0;
+  position: relative;
+  padding-left: 20px;
+  color: #555;
+}
+
+.skills li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .skill-category {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills h2 {
+    font-size: 2rem;
+  }
+  .skill-category h3 {
+    font-size: 1.5rem;
+  }
+  .skills ul {
+    font-size: 1rem;
+  }
 }

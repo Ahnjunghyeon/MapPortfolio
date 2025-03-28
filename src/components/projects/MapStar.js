@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./MapStar.css";
 
 const MapStar = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // 이미지 배열
   const images = [
@@ -14,6 +18,8 @@ const MapStar = () => {
     "/images/mapstar/searchhistory.jpg",
     "/images/mapstar/login.jpg",
     "/images/mapstar/register.jpg",
+    "/images/mapstar/데이터베이스-1.jpg",
+    "/images/mapstar/실제 앱.jpg",
   ];
   const phoneimages = [
     "/images/mapstar/phonedefault.png",
@@ -66,7 +72,6 @@ const MapStar = () => {
             MapStar - Github 바로가기
           </a>
         </div>
-
         <div className="image-container">
           <div className="left-click" onClick={handlePrev}>
             ⮜
@@ -82,21 +87,72 @@ const MapStar = () => {
             ⮞
           </div>
         </div>
+        <div className="skilltitle">💻사용기술</div>
+        <div className="skilletools">
+          <img
+            src="/images/toolsimage/firebaselogo.png"
+            alt="기술2"
+            className="tech-image"
+          />
+          <img
+            src="/images/toolsimage/reactlogo투명.png"
+            alt="기술3"
+            className="tech-image"
+          />
+          <img
+            src="/images/toolsimage/awslogo투명300.png"
+            alt="기술1"
+            className="tech-image-aws"
+          />
+          <img
+            src="/images/toolsimage/javascriptlogo투명.png"
+            alt="기술4"
+            className="tech-image"
+          />
+          <img
+            src="/images/toolsimage/nodejslogo.png"
+            alt="기술5"
+            className="tech-image"
+          />
+          <img
+            src="/images/toolsimage/Heidisqllogo-1.png"
+            alt="기술6"
+            className="tech-image"
+          />
+          <img
+            src="/images/toolsimage/mysqllogo.png"
+            alt="기술7"
+            className="tech-image"
+          />
+        </div>
         <div className="webexplanation">
-          <span>MapStar-Web은 카카오 API를 기반으로 제작된 지도 서비스</span>
+          <span>MapStar-Web은 카카오 API를 기반으로 제작된 인프라 서비스</span>
           입니다.
         </div>
         <div className="webexplanationsub">
-          새로운 위치를 선정할 때 근처의 다양한 인프라를 한 눈에 확인할 수
-          있도록 돕는 웹입니다. <br />
-          <br />이 웹을 제작하게 된 동기는 자취 생활 중, 네이버 지도를 자주
-          사용하며 불편함을 느낀 경험에서 시작되었습니다. 자취방을 검색하면서
-          근처의 다양한 정보를 확인하려 할 때, <br />집 주소를 입력하고 그
-          주변을 하나하나 훑어보는 과정이 번거로웠습니다.
-          <br /> 네이버 지도, 카카오 지도, 구글 지도 등 여러 서비스를 사용해
-          보았지만, 각 지도에서 제공하는 카테고리가 중복되지않아 제가 원하는
-          정보를 효율적으로 볼 수 없다는 점이 문제였습니다. <br />
-          이러한 문제를 해결하고자 MapStar-Web을 제작하게 되었습니다.
+          새로운 위치를 선정할 때, 주변 인프라를 한눈에 확인할 수 있도록 돕는
+          웹입니다.
+        </div>
+        <div className="webexplanationsub">
+          초기 지도는 서울로 설정되어 있으며, 사용자가 특정 위치를 선택하면
+          마커가 변경됩니다.
+          <br />
+          또한, `panTo()`를 활용하여 자연스럽게 지도 이동이 이루어지도록
+          구현하였습니다.t
+        </div>
+        <div className="webexplanationsub">
+          검색 기능과 검색 기록 조회, 지도 크기 자동 조정 및 초기화 기능을
+          추가하였으며,
+          <br />
+          마지막으로 반응형 디자인을 적용하였습니다.
+          <br /> +추가로 사진에 보이는 앱은 재미로 AI툴을 이용해서 간단하게
+          어플로 만들어봤습니다 --
+        </div>
+        <div className="webexplanationsub">
+          개발 동기 : 평소 자주 사용하는 지도앱과, 자취방을 구하는 경험을 토대로{" "}
+          <br />
+          이러한 인프라를 한번에 볼 수 있는 기능이 있으면 좋겠다는 생각을 갖고
+          WEB을 제작했습니다.
         </div>
 
         <div className="phone-image-container">
@@ -115,34 +171,6 @@ const MapStar = () => {
           </div>
         </div>
         <div className="phoneexplanation">반응형 디자인</div>
-      </div>
-      <div className="skilltitle">💻사용기술</div>
-      <div className="skilletools">
-        <img
-          src="/images/toolsimage/awslogo투명300.png"
-          alt="기술1"
-          className="tech-image-aws"
-        />
-        <img
-          src="/images/toolsimage/firebaselogo.png"
-          alt="기술2"
-          className="tech-image"
-        />
-        <img
-          src="/images/toolsimage/reactlogo투명.png"
-          alt="기술3"
-          className="tech-image"
-        />
-        <img
-          src="/images/toolsimage/javascriptlogo투명.png"
-          alt="기술4"
-          className="tech-image"
-        />
-        <img
-          src="/images/toolsimage/nodejslogo.png"
-          alt="기술5"
-          className="tech-image"
-        />
       </div>
       <button className="beforepage" onClick={() => navigate(-1)}>
         이전으로 ⤶

@@ -10,18 +10,22 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
-.project-detail .usermaintitle {
+.project-detail .frontmaintitle {
   position: relative;
-  left: -350px;
+  left: -300px;
   margin-top: 50px;
   font-size: 2.5rem;
   color: #000000;
   margin-bottom: 5px;
   font-family: "Noto Sans KR", sans-serif;
 }
+.project-detail .frontmaintitlesub {
+  color: #000000;
+  font-family: "Noto Sans KR", sans-serif;
+}
 
-.project-detail .userintroduction {
-  gap: 650px;
+.project-detail .frontintroduction {
+  gap: 680px;
   display: flex;
   justify-content: space-between;
   font-family: "Noto Sans KR", sans-serif;
@@ -38,12 +42,12 @@
   margin-bottom: 30px;
 }
 
-.usergithuburl {
+.frontgithuburl {
   display: flex;
   justify-content: center;
 }
 
-.usergithuburl a {
+.frontgithuburl a {
   margin-bottom: 30px;
   align-items: center;
   font-size: 24px;
@@ -54,7 +58,7 @@
   height: auto;
   padding: 10px;
 }
-.usergithuburl a:hover {
+.frontgithuburl a:hover {
   text-decoration: none;
   color: #003366;
   padding: 10px;
@@ -70,69 +74,43 @@
   align-items: center;
 }
 
-.userweb-img-width {
+.frontweb-img-width {
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
   height: auto;
   object-fit: cover;
 }
 
-.webexplanation {
+.frontwebexplanation {
   position: relative;
-  width: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  font-size: 26px; /* 폰트 크기 증가 */
+  font-size: 26px;
   text-align: center;
   font-weight: bold;
   color: #000000;
-  text-shadow: 0 0 20px rgba(252, 146, 146, 0.6); /* 텍스트 그림자 강도 증가 */
+  text-shadow: 0 0 20px rgba(252, 146, 146, 0.6);
   padding: 20px;
-  border-radius: 10px; /* 테두리 둥글게 처리 */
+  border-radius: 10px;
 }
 
-.userwebexplanationsub {
-  width: 1000px;
+.frontwebexplanationsub {
   margin-bottom: 20px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 22px; /* 폰트 크기 */
+  font-size: 22px;
   text-align: center;
-  color: #000000; /* 텍스트 색상 변경 */
-  line-height: 1.8; /* 줄 간격 조정 */
+  color: #000000;
+  line-height: 1.8;
   padding: 20px;
   border-radius: 10px;
 }
 
 /* 웹이미지 */
-
-.phone-image-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.userweb-img-height {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  object-fit: cover;
-}
-.phoneexplanation {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px auto;
-  font-size: 24px;
-}
-
-/* 반응형이미지 */
 
 .left-click {
   position: absolute;
@@ -197,6 +175,27 @@
 }
 /* 이미지클릭 웹 */
 
+button {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  background-color: #6c5b7b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00000067;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:focus {
+  outline: none;
+}
+
 .beforepage {
   font-family: "Jua", sans-serif;
   position: fixed;
@@ -215,6 +214,26 @@
 }
 
 .beforepage:hover {
+  background-color: #00000067;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.beforepagebutton {
+  font-family: "Jua", sans-serif;
+  font-size: 17px;
+  border: none;
+  color: #000000;
+  background-color: #ffffff00;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.beforepagebutton:hover {
   background-color: #00000067;
   color: #ffffff;
   transition: background-color 0.3s ease, color 0.3s ease;

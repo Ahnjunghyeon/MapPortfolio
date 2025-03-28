@@ -1,6 +1,6 @@
 *span {
   font-weight: bold;
-  color: #000000;
+  color: #e70000;
   text-shadow: 0 0 20px rgba(85, 47, 47, 0.897);
 }
 
@@ -102,7 +102,6 @@
 
 .webexplanationsub {
   width: 1000px;
-  margin-top: 20px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -259,21 +258,6 @@
   cursor: pointer;
 }
 
-.left-click-ph {
-  position: absolute;
-  background-color: #ffffffb6;
-  color: #000000;
-  font-size: 40px;
-  left: 320px;
-  padding: 10px;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
 .right-click-ph:hover,
 .left-click-ph:hover {
   background-color: #00000067;
@@ -282,27 +266,6 @@
 }
 
 /* 이미지클릭 반응형 */
-
-button {
-  padding: 10px 20px;
-  font-size: 1.1rem;
-  background-color: #6c5b7b;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #00000067;
-  color: #ffffff;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-button:focus {
-  outline: none;
-}
 
 .beforepage {
   font-family: "Jua", sans-serif;
@@ -329,15 +292,18 @@ button:focus {
 }
 
 .skilltitle {
+  display: flex;
+  justify-content: center;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 25px;
+  margin-top: 50px;
 }
 
 .skilletools {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 50px;
   align-items: center;
-  gap: 20px;
   margin-top: 30px;
   margin-bottom: 50px;
 }

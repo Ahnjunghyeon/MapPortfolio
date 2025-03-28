@@ -197,6 +197,27 @@
 }
 /* 이미지클릭 웹 */
 
+button {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  background-color: #6c5b7b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00000067;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:focus {
+  outline: none;
+}
+
 .beforepage {
   font-family: "Jua", sans-serif;
   position: fixed;
@@ -215,6 +236,26 @@
 }
 
 .beforepage:hover {
+  background-color: #00000067;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.beforepagebutton {
+  font-family: "Jua", sans-serif;
+  font-size: 17px;
+  border: none;
+  color: #000000;
+  background-color: #ffffff00;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.beforepagebutton:hover {
   background-color: #00000067;
   color: #ffffff;
   transition: background-color 0.3s ease, color 0.3s ease;

@@ -11,7 +11,7 @@ const AboutMe = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <h2 className="aboutmelogo">About Me</h2>
+      <div className="about-me-title">Profile</div>
       <div className="about-me-container">
         <motion.div
           className="contact"
@@ -79,8 +79,13 @@ const AboutMe = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
         >
-          <Link className="gotoskills" to="skills" smooth={true} duration={500}>
-            Skills ⬇
+          <Link
+            className="gotoportfolio"
+            to="portfolio"
+            smooth={true}
+            duration={500}
+          >
+            Portfolio ⬇
           </Link>
         </motion.div>
         <motion.div
@@ -113,9 +118,9 @@ const AboutMe = () => {
             WEB : <span>지도</span> ( 개인 / Front-End : React-javascript or
             Back-End : Aws,Firebase )
           </div>
-
-          <div className="experience-goal">
-            <p>React, JavaScript, AWS 등을 활용한 프로젝트 경험</p>
+          <div className="experiencetitle">
+            WEB : <span>포트폴리오</span> ( 개인 / Front-End : React-javascript
+            or Back-End : Firebase )
           </div>
         </motion.div>
       </div>{" "}

@@ -8,8 +8,11 @@ import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
 import MapStar from "./components/projects/MapStar";
 import Snsweb from "./components/projects/Snsweb";
-import UserService from "./components/projects/Snsweb";
-
+import UserService from "./components/projects/UserService";
+import Todolist from "./components/projects/Todolist";
+import Bigdata from "./components/projects/Bigdata";
+import Capston from "./components/projects/Capston";
+import Frontport from "./components/projects/Frontport";
 import "./App.css";
 
 function App() {
@@ -53,6 +56,10 @@ function App() {
         <Route path="/projects/mapstar" element={<MapStar />} />
         <Route path="/projects/snsweb" element={<Snsweb />} />
         <Route path="/projects/userservice" element={<UserService />} />
+        <Route path="/projects/bigdata" element={<Bigdata />} />
+        <Route path="/projects/todolist" element={<Todolist />} />
+        <Route path="/projects/capston" element={<Capston />} />
+        <Route path="/projects/frontport" element={<Frontport />} />
       </Routes>
       <ScrollLink
         to="skills"

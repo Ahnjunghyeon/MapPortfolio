@@ -27,14 +27,15 @@ p {
   background: #e4eaf021;
 }
 
-.about-me .aboutmelogo {
-  position: absolute;
-  font-size: 1.25rem;
-  color: #b3907a;
-  margin-right: 15px;
-  margin-bottom: 20px;
-  top: 950px;
-  align-self: flex-end;
+.about-me-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  margin-left: 140px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .about-me-container {
@@ -133,7 +134,7 @@ p {
   align-items: center;
 }
 
-.gotoskills {
+.gotoportfolio {
   color: #ffffff;
   position: absolute;
   font-size: 30px;
@@ -143,7 +144,7 @@ p {
   border-radius: 30%;
 }
 
-.gotoskills:hover {
+.gotoportfolio:hover {
   color: #ffe293;
 }
 
@@ -159,13 +160,6 @@ p {
   border-radius: 10px;
   text-align: left;
   white-space: nowrap;
-}
-
-.experience-goal {
-  font-size: 18px;
-  margin-top: 20px;
-  color: #ffffff;
-  font-weight: bold;
 }
 
 /* ----------experience ------------ */

@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Snsweb.css";
 
 const Snsweb = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // 이미지 배열
   const images = [
@@ -52,16 +56,16 @@ const Snsweb = () => {
 
   return (
     <div className="project-detail">
-      <div className="maintitle">SNS-WEB</div>
+      <div className="snsmaintitle">SNS-WEB</div>
       <div className="snsintroduction">
         {" "}
-        <div className="maintitlesub">SNS 서비스</div>
-        <div className="maintitlesub">2024.06. ~ 2024.08 </div>
+        <div className="snsmaintitlesub">SNS 서비스</div>
+        <div className="snsmaintitlesub">2024.06. ~ 2024.08 </div>
       </div>
       <div className="image-conts">
-        <div className="githuburl">
+        <div className="snsgithuburl">
           <a
-            href="https://github.com/Ahnjunghyeon/Mapstar"
+            href="https://github.com/Ahnjunghyeon/test-login"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -84,14 +88,48 @@ const Snsweb = () => {
             ⮞
           </div>
         </div>
+        <div className="skilltitle">💻사용기술</div>
+        <div className="snsskilletools">
+          <img
+            src="/images/toolsimage/firebaselogo.png"
+            alt="기술2"
+            className="tech-image"
+          />
+          <img
+            src="/images/toolsimage/reactlogo투명.png"
+            alt="기술3"
+            className="tech-image"
+          />
+          <img
+            src="/images/toolsimage/javascriptlogo투명.png"
+            alt="기술4"
+            className="tech-image"
+          />
+          <img
+            src="/images/toolsimage/nodejslogo.png"
+            alt="기술5"
+            className="tech-image"
+          />
+        </div>
         <div className="webexplanation">
           <span>SNS-Web은 </span>
         </div>
-        <div className="webexplanationsub">
+        <div className="snswebexplanationsub">
           평소 자주 사용하는 Instagram을 클론 코딩이 아닌, 제 방식대로 해석하여
           나만의 방식으로 구현해본 웹입니다. 이 웹을 개발한 목적은 저 자신의
           개발 실력을 증진하고, 웹 구조를 설계하는 것에 대한 공부를 하기
           위해서입니다
+        </div>
+        <div className="snswebexplanationsub">
+          주요기능으로는
+          <br />- 서로 유저간 팔로우기능
+          <br />- 게시물의 업로드, 수정 및 삭제
+          <br />- 댓글추가, 수정 및 상제
+          <br /> - 상대방의 프로필 검색
+          <br />- 유저간 다이렉트메세지
+          <br />- 이벤트 발생 시, 알림메세지
+          <br />
+          등이 있습니다.
         </div>
 
         <div className="phone-image-container">
@@ -110,29 +148,6 @@ const Snsweb = () => {
           </div>
         </div>
         <div className="phoneexplanation">반응형 디자인</div>
-      </div>
-      <div className="skilltitle">💻사용기술</div>
-      <div className="skilletools">
-        <img
-          src="/images/toolsimage/firebaselogo.png"
-          alt="기술2"
-          className="tech-image"
-        />
-        <img
-          src="/images/toolsimage/reactlogo투명.png"
-          alt="기술3"
-          className="tech-image"
-        />
-        <img
-          src="/images/toolsimage/javascriptlogo투명.png"
-          alt="기술4"
-          className="tech-image"
-        />
-        <img
-          src="/images/toolsimage/nodejslogo.png"
-          alt="기술5"
-          className="tech-image"
-        />
       </div>
       <button className="beforepage" onClick={() => navigate(-1)}>
         이전으로 ⤶
